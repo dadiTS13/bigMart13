@@ -28,12 +28,20 @@ justify-content: center;
  	justify-content: flex-start;
   }
 
- @media (max-width: 1200px){
+ @media (max-width: 1000px){
  	.flexbox{
- 		flex-direction: column;
+ 		flex-direction: row;
  		justify-content: center;
- 		
+ 		align-items: center;
  	}
+ 	.icon{
+  transform: translate(-50%, -50%);
+     transition: 0.3s ease-in-out all;
+display: none;
+}
+ .a:hover .icon{
+	opacity: 0;
+}
  }
 
 .icon{
@@ -54,7 +62,7 @@ justify-content: center;
 .icon1{
 		position: absolute;
  top: 162px;
-  left: 170px;
+ left: 170px;
 }
 .icon2{
 		position: absolute;
